@@ -1,0 +1,13 @@
+.post__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__card {
+  box-shadow: 0 1px 3px rgba(60,64,67, 0.3), 0 4px 8px 3px rgba(60,64,67, 0.15);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 50%;
+}

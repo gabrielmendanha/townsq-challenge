@@ -1,8 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { FeedComponent } from './_core/_features/feed/feed.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,9 @@ import { FeedComponent } from './_core/_features/feed/feed.component';
     FeedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
