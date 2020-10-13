@@ -1,6 +1,6 @@
 <section>
   <div class="post__container">
-    <div class="post__card" *ngFor="let post of posts()">
+    <div class="post__card" (click)="showUserDetails(post.userId)" *ngFor="let post of posts()">
       <h3>
         {{ post.title }}
       </h3>

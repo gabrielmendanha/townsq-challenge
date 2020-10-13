@@ -13,6 +13,7 @@ export class User {
   phone: string;
   website: string;
   company: Company;
+  email: string;
 }
 
 interface Address {

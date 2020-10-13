@@ -23,6 +23,10 @@ export class FeedComponent implements OnInit {
     return this._posts;
   }
 
+  public async showUserDetails(userId: number): Promise<void> {
+    await this._feedService.getAndDisplayUserDetails(userId);
+  }
+
   private _initializeObservables(): void {
     this._feedService.posts$.subscribe((posts: Array<Post>) => {
       this._posts = posts;

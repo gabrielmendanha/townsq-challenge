@@ -1,0 +1,21 @@
+<div class="modal-header">
+  <div class="modal-title pull-left">
+    <h4>
+      {{ getHeader() }}
+    </h4>
+    <h5> {{ getSubheader() }} </h5>
+    <h6>{{ getWebsite() }}</h6>
+  </div>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <ul>
+    <li> {{ getCompanyDisplay() }} </li>
+    <li> {{ getAddressDisplay() }} </li>
+  </ul>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="hide()">Close</button>
+</div>
