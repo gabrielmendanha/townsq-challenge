@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,7 +17,8 @@
       "dom"
     ],
     "paths": {
-      "@core/*": ["./app/_core/_features/*"]
+      "@core/*": ["./app/_core/_features/*"],
+      "@components/*": ["./app/_core/components/*"]
     }
   }
 }
