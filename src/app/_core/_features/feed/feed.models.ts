@@ -1,11 +1,11 @@
-export class Post {
+export interface Post {
   userId: number;
   id: number;
   title: string;
   body: string;
 }
 
-export class User {
+export interface User {
   id: number;
   name: string;
   username: string;

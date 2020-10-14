@@ -23,6 +23,11 @@ export class FeedComponent implements OnInit {
     return this._posts;
   }
 
+  public edit(post: Post, event: Event): void {
+    event.stopPropagation();
+    this._feedService.editPost(post);
+  }
+
   public async showUserDetails(userId: number): Promise<void> {
     await this._feedService.getAndDisplayUserDetails(userId);
   }
